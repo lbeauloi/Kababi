@@ -1,3 +1,12 @@
+$footer-font-color: white;
+
 header{
-    background-image: ;
+    background-image: url(./images/slider/img_bg_slider_home01.jpg);
+}
+
+
+
+footer{
+    background-image: url("./images/footer/img-ng-footer.jpg");
+    color: $footer-font-color;
 }

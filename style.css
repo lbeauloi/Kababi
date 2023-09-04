@@ -1,1 +1,8 @@
-/*# sourceMappingURL=style.css.map */
+header {
+  background-image: url(./images/slider/img_bg_slider_home01.jpg);
+}
+
+footer {
+  background-image: url("./images/footer/img-ng-footer.jpg");
+  color: white;
+}/*# sourceMappingURL=style.css.map */
