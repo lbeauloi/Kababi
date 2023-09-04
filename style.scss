@@ -1,5 +1,13 @@
-@import url(./typo.scss);
-@import url(./variable.scss);
+// @import url(./_typo.scss);
+// @import url(./_variable.scss);
+$footer-font-color: #FBFBFB;
+$hover-color: #C8A96A;
+$font-title:"Forum", cursive;
+$font-button-baseline:'Open Sans', sans-serif;
+
+@import url('https://fonts.googleapis.com/css2?family=Forum&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Forum&family=Open+Sans:wght@300&display=swap');
+
 
 // body{
 //     width: 410px;
@@ -18,13 +26,17 @@ header{
         text-decoration: none;
         color: $footer-font-color;
     }
+    .tel{
+        display: inline;
+        font-size: 10px;
+    }
 }
 
 main{
     // box{
 
     // }
-    category{
+    .category{
         background-image: url(./images/Banner/imgbgcategory.jpg);
         background-size: 410px;
         background-repeat: no-repeat;
@@ -34,12 +46,10 @@ main{
 
 
 footer{
-    // background-image: url("./images/footer/img-ng-footer.jpg");
-    // background-size: 410px;
-    // background-repeat: no-repeat;
-    background-image: url(./images/slider/img_bg_slider_home01.jpg);
+    background-image: url("./images/footer/img-ng-footer.jpg");
     background-size: 410px;
     background-repeat: no-repeat;
+    
     color: $footer-font-color;
 }
 
