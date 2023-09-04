@@ -1,9 +1,13 @@
 @import url(./typo.scss);
 @import url(./variable.scss);
 
+// body{
+//     width: 410px;
+
+// }
 header{
     background-image: url(./images/slider/img_bg_slider_home01.jpg);
-    background-size: 410PX;
+    background-size: 410px;
     background-repeat: no-repeat;
     color: $footer-font-color;
     h1{
@@ -11,13 +15,31 @@ header{
     }
     a{
         font-family: $font-button-baseline;
+        text-decoration: none;
+        color: $footer-font-color;
+    }
+}
+
+main{
+    // box{
+
+    // }
+    category{
+        background-image: url(./images/Banner/imgbgcategory.jpg);
+        background-size: 410px;
+        background-repeat: no-repeat;
     }
 }
 
 
 
 footer{
-    background-image: url("./images/footer/img-ng-footer.jpg");
+    // background-image: url("./images/footer/img-ng-footer.jpg");
+    // background-size: 410px;
+    // background-repeat: no-repeat;
+    background-image: url(./images/slider/img_bg_slider_home01.jpg);
+    background-size: 410px;
+    background-repeat: no-repeat;
     color: $footer-font-color;
 }
 
