@@ -1,7 +1,17 @@
-$footer-font-color: white;
+@import url(./typo.scss);
+@import url(./variable.scss);
 
 header{
     background-image: url(./images/slider/img_bg_slider_home01.jpg);
+    background-size: 410PX;
+    background-repeat: no-repeat;
+    color: $footer-font-color;
+    h1{
+        font-family: $font-title;
+    }
+    a{
+        font-family: $font-button-baseline;
+    }
 }
 
 
@@ -9,4 +19,11 @@ header{
 footer{
     background-image: url("./images/footer/img-ng-footer.jpg");
     color: $footer-font-color;
+}
+
+.container{
+    margin: 0;
+    .box{
+        width: 410px;
+    }
 }

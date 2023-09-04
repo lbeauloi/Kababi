@@ -1,8 +1,18 @@
 header {
   background-image: url(./images/slider/img_bg_slider_home01.jpg);
+  background-size: 410PX;
+  background-repeat: no-repeat;
+  color: #FBFBFB;
 }
 
 footer {
   background-image: url("./images/footer/img-ng-footer.jpg");
-  color: white;
+  color: #FBFBFB;
+}
+
+.container {
+  margin: 0;
+}
+.container .box {
+  width: 410px;
 }/*# sourceMappingURL=style.css.map */
