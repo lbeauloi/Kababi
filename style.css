@@ -134,10 +134,19 @@ main .box-chef {
 }
 
 footer {
-  background-image: url("./images/footer/img-ng-footer.jpg");
-  background-size: 410px;
-  background-repeat: no-repeat;
+  background-color: black;
   color: #FBFBFB;
+}
+footer h2 {
+  display: block;
+  text-align: center;
+  padding-top: 10px;
+}
+footer h3 {
+  font-size: 16px;
+}
+footer p {
+  font-size: 10px;
 }
 
 .container {

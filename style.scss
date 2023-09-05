@@ -139,11 +139,23 @@ main{
     
 }
 footer{
-    background-image: url("./images/footer/img-ng-footer.jpg");
-    background-size: 410px;
-    background-repeat: no-repeat;
+    // background-image: url("./images/footer/img-ng-footer.jpg");
+    // background-size: 410px;
+    // background-repeat: no-repeat;
+    background-color: black;
     
     color: $footer-font-color;
+    h2{
+        display: block;
+        text-align: center;
+        padding-top: 10px;
+    }
+    h3{
+        font-size: 16px;
+    }
+    p{
+        font-size: 10px;
+    }
 }
 .container{
     margin: 0;
