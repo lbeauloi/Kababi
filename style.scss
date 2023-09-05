@@ -1,14 +1,5 @@
-// @import url(./_typo.scss);
-// @import url(./_variable.scss);
-$footer-font-color: #FBFBFB;
-$hover-color: #C8A96A;
-$font-title:"Forum", cursive;
-$font-button-baseline:'Open Sans', sans-serif;
-
-@import url('https://fonts.googleapis.com/css2?family=Forum&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Forum&family=Open+Sans:wght@300&display=swap');
-
-
+@import './_typo.scss';
+@import './_variable.scss';
 // body{
 //     width: 410px;
 
@@ -40,6 +31,7 @@ main{
         background-image: url(./images/Banner/imgbgcategory.jpg);
         background-size: 410px;
         background-repeat: no-repeat;
+        background-color: $banner-color;
     }
 }
 

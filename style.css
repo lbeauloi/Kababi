@@ -23,6 +23,7 @@ main .category {
   background-image: url(./images/Banner/imgbgcategory.jpg);
   background-size: 410px;
   background-repeat: no-repeat;
+  background-color: #FAF6F0;
 }
 
 footer {
