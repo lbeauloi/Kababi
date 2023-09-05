@@ -7,9 +7,10 @@
 
 header{
     background-image: url(./images/slider/img_bg_slider_home01.jpg);
-    background-size: contain;
+    background-size: 410px;
     background-repeat: no-repeat;
     color: $footer-font-color;
+    
     h1{
         font-family: $font-title;
     }
@@ -40,7 +41,7 @@ main{
     .category{
         background-image: url(./images/Banner/imgbgcategory.jpg);
         background-size: 410px;
-        height: 100vh;
+        // height: 100vh;
         background-repeat: no-repeat;
         // background-color: $banner-color;
 
