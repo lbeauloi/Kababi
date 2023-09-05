@@ -73,17 +73,41 @@ main .box-choose {
 main .box-choose p {
   margin: 15px 41px;
 }
-
-footer {
+main .gallery {
+  background-color: aqua;
+}
+main .gallery .gallerie {
+  display: grid;
+  gap: 10px;
+  grid-template-areas: "image1 image1" "image2 image3" "image4 image4" "image5 image6";
+}
+main .gallery .gallerie .image1 {
+  grid-area: image1;
+}
+main .gallery .gallerie .image2 {
+  grid-area: image2;
+}
+main .gallery .gallerie .image3 {
+  grid-area: image3;
+}
+main .gallery .gallerie .image4 {
+  grid-area: image4;
+}
+main .gallery .gallerie .image5 {
+  grid-area: image5;
+}
+main .gallery .gallerie .image6 {
+  grid-area: image6;
+}
+main footer {
   background-image: url("./images/footer/img-ng-footer.jpg");
   background-size: 410px;
   background-repeat: no-repeat;
   color: #FBFBFB;
 }
-
-.container {
+main .container {
   margin: 0;
 }
-.container .box {
+main .container .box {
   width: 410px;
 }/*# sourceMappingURL=style.css.map */
