@@ -39,11 +39,11 @@ main{
         
     }
     .category{
-        background-image: url(./images/Banner/imgbgcategory.jpg);
+        background-image: url(./images/Banner/imgbgcategory.png);
         background-size: 410px;
         // height: 100vh;
         background-repeat: no-repeat;
-        // background-color: $banner-color;
+        background-color: $banner-color;
 
         .flex-category{
             display: grid;
@@ -82,6 +82,28 @@ main{
                 margin: 15px 41px;
             }
          } 
+    .special{
+        display: grid;
+        grid-template-rows: 8;
+        gap: 15px;
+    
+        .box-special{
+            width: 350px;
+            border: 0px solid black;
+            margin: 0 15px;
+            padding: 0 15px;
+            display: grid;
+            grid-template-areas: "h4 h4 prix"
+                                     "p p prix";
+                
+            img{
+                margin: auto;
+            }
+            h4{grid-area: h4;}
+            p{grid-area: p;}
+            img{grid-area: prix;}
+        }
+    }
 
     .gallery{
         background-color: aqua;
@@ -102,13 +124,9 @@ main{
             .image5{grid-area:image5;}
             .image6{grid-area:image6;}
         }
-       
-
-    }
-                
-            
+    }        
     
-
+}
 
 
 footer{
@@ -124,5 +142,4 @@ footer{
     .box{
         width: 410px;
     }
-}
 }

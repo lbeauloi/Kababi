@@ -27,9 +27,10 @@ main .box .subtitle {
   font-size: 15px;
 }
 main .category {
-  background-image: url(./images/Banner/imgbgcategory.jpg);
+  background-image: url(./images/Banner/imgbgcategory.png);
   background-size: 410px;
   background-repeat: no-repeat;
+  background-color: #FAF6F0;
 }
 main .category .flex-category {
   display: grid;
@@ -73,6 +74,31 @@ main .box-choose {
 main .box-choose p {
   margin: 15px 41px;
 }
+main .special {
+  display: grid;
+  grid-template-rows: 8;
+  gap: 15px;
+}
+main .special .box-special {
+  width: 350px;
+  border: 0px solid black;
+  margin: 0 15px;
+  padding: 0 15px;
+  display: grid;
+  grid-template-areas: "h4 h4 prix" "p p prix";
+}
+main .special .box-special img {
+  margin: auto;
+}
+main .special .box-special h4 {
+  grid-area: h4;
+}
+main .special .box-special p {
+  grid-area: p;
+}
+main .special .box-special img {
+  grid-area: prix;
+}
 main .gallery {
   background-color: aqua;
 }
@@ -99,15 +125,17 @@ main .gallery .gallerie .image5 {
 main .gallery .gallerie .image6 {
   grid-area: image6;
 }
-main footer {
+
+footer {
   background-image: url("./images/footer/img-ng-footer.jpg");
   background-size: 410px;
   background-repeat: no-repeat;
   color: #FBFBFB;
 }
-main .container {
+
+.container {
   margin: 0;
 }
-main .container .box {
+.container .box {
   width: 410px;
 }/*# sourceMappingURL=style.css.map */
