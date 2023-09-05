@@ -42,20 +42,27 @@ main{
         background-size: 410px;
         height: 100vh;
         background-repeat: no-repeat;
-        background-color: $banner-color;
+        // background-color: $banner-color;
 
         .flex-category{
             display: grid;
-            gap: 40px;
+            gap: 20px 50px;
             grid-template-areas: "chees pizza"
                                  "coffee chicken"
                                  "energy shrimp";
-                                 margin: 40px;
+                                 margin: 20px 60px;
 
             .box-category{
                 width: 120px;
                 height: 150px;
                 border: 1px solid black;
+                text-align: center;
+                .icon{
+                    width: 40px;
+                    height: auto;
+                    margin-top: 15px;
+                }
+
             }
             .chees{grid-area:chees};
             .pizza{grid-area:pizza};

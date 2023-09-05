@@ -31,18 +31,23 @@ main .category {
   background-size: 410px;
   height: 100vh;
   background-repeat: no-repeat;
-  background-color: #e4b64b;
 }
 main .category .flex-category {
   display: grid;
-  gap: 40px;
+  gap: 20px 50px;
   grid-template-areas: "chees pizza" "coffee chicken" "energy shrimp";
-  margin: 40px;
+  margin: 20px 60px;
 }
 main .category .flex-category .box-category {
   width: 120px;
   height: 150px;
   border: 1px solid black;
+  text-align: center;
+}
+main .category .flex-category .box-category .icon {
+  width: 40px;
+  height: auto;
+  margin-top: 15px;
 }
 main .category .flex-category .chees {
   grid-area: chees;
