@@ -135,8 +135,20 @@ main{
         // img{
             
         // }
-    }        
+    } 
     
+    .news{
+        background-color: aqua;
+        display: grid;
+        grid-template-rows: 3;
+        gap: 5px;
+
+        .box-news{
+            figure{
+                margin: auto;
+            }
+        }
+    }
 }
 footer{
     background-image: url("./images/footer/img-ng-footer.jpg");

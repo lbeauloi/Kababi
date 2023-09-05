@@ -132,6 +132,15 @@ main .box-chef {
   margin: 10px;
   gap: 10px;
 }
+main .news {
+  background-color: aqua;
+  display: grid;
+  grid-template-rows: 3;
+  gap: 5px;
+}
+main .news .box-news figure {
+  margin: auto;
+}
 
 footer {
   background-image: url("./images/footer/img-ng-footer.jpg");
