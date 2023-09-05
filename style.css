@@ -24,7 +24,7 @@ main .box h2 {
 }
 main .box .subtitle {
   text-align: center;
-  font-size: 15px;
+  font-size: 10px;
 }
 main .category {
   background-image: url(./images/Banner/imgbgcategory.png);
@@ -100,30 +100,37 @@ main .special .box-special img {
   grid-area: prix;
 }
 main .gallery {
-  background-color: aqua;
+  text-align: center;
 }
-main .gallery .gallerie {
+main .gallery .div-gallery {
   display: grid;
   gap: 10px;
+  margin: 10px;
   grid-template-areas: "image1 image1" "image2 image3" "image4 image4" "image5 image6";
 }
-main .gallery .gallerie .image1 {
+main .gallery .div-gallery .image1 {
   grid-area: image1;
 }
-main .gallery .gallerie .image2 {
+main .gallery .div-gallery .image2 {
   grid-area: image2;
 }
-main .gallery .gallerie .image3 {
+main .gallery .div-gallery .image3 {
   grid-area: image3;
 }
-main .gallery .gallerie .image4 {
+main .gallery .div-gallery .image4 {
   grid-area: image4;
 }
-main .gallery .gallerie .image5 {
+main .gallery .div-gallery .image5 {
   grid-area: image5;
 }
-main .gallery .gallerie .image6 {
+main .gallery .div-gallery .image6 {
   grid-area: image6;
+}
+main .box-chef {
+  display: grid;
+  grid-template: repeat(2, 1fr)/repeat(2, 1fr);
+  margin: 10px;
+  gap: 10px;
 }
 
 footer {

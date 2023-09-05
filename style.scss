@@ -34,7 +34,7 @@ main{
         
         .subtitle{
             text-align: center;
-            font-size: 15px;
+            font-size: 10px;
         }
         
     }
@@ -106,11 +106,11 @@ main{
     }
 
     .gallery{
-        background-color: aqua;
-    
-        .gallerie{
+        text-align: center;    
+        .div-gallery{
             display: grid;
             gap: 10px;
+            margin: 10px;
             grid-template-areas:"image1 image1"
                                 "image2 image3"
                                 "image4 image4"
@@ -124,11 +124,20 @@ main{
             .image5{grid-area:image5;}
             .image6{grid-area:image6;}
         }
+                    
+    }
+
+    .box-chef{
+        display: grid;
+        grid-template: repeat(2, 1fr) / repeat(2, 1fr);
+        margin: 10px;
+        gap: 10px;
+        // img{
+            
+        // }
     }        
     
 }
-
-
 footer{
     background-image: url("./images/footer/img-ng-footer.jpg");
     background-size: 410px;
@@ -136,7 +145,6 @@ footer{
     
     color: $footer-font-color;
 }
-
 .container{
     margin: 0;
     .box{
