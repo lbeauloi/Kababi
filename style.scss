@@ -4,9 +4,10 @@
 //     width: 410px;
 
 // }
+
 header{
     background-image: url(./images/slider/img_bg_slider_home01.jpg);
-    background-size: 410px;
+    background-size: contain;
     background-repeat: no-repeat;
     color: $footer-font-color;
     h1{
@@ -24,15 +25,46 @@ header{
 }
 
 main{
-    // box{
-
-    // }
+    .box{
+        h2{
+    
+            text-align: center;
+        }
+        
+        .subtitle{
+            text-align: center;
+            font-size: 15px;
+        }
+        
+    }
     .category{
         background-image: url(./images/Banner/imgbgcategory.jpg);
         background-size: 410px;
+        height: 100vh;
         background-repeat: no-repeat;
         background-color: $banner-color;
-    }
+
+        .flex-category{
+            display: grid;
+            gap: 40px;
+            grid-template-areas: "chees pizza"
+                                 "coffee chicken"
+                                 "energy shrimp";
+                                 margin: 40px;
+
+            .box-category{
+                width: 120px;
+                height: 150px;
+                border: 1px solid black;
+            }
+            .chees{grid-area:chees};
+            .pizza{grid-area:pizza};
+            .coffee{grid-area: coffee};
+            .chicken{grid-area: chicken;}
+            .energy{grid-area:energy;}
+            .shrimp{grid-area: shrimp;}
+        }
+    }   
 }
 
 
@@ -51,3 +83,4 @@ footer{
         width: 410px;
     }
 }
+
