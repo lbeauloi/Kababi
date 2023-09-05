@@ -72,8 +72,16 @@ main{
             .shrimp{grid-area: shrimp;}
         }
     }   
-}
 
+
+    .box-choose{
+            height: auto;
+            text-align: center;
+            p{
+                margin: 15px 41px;
+            }
+         } 
+}
 
 
 footer{

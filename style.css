@@ -67,6 +67,13 @@ main .category .flex-category .energy {
 main .category .flex-category .shrimp {
   grid-area: shrimp;
 }
+main .box-choose {
+  height: auto;
+  text-align: center;
+}
+main .box-choose p {
+  margin: 15px 41px;
+}
 
 footer {
   background-image: url("./images/footer/img-ng-footer.jpg");
