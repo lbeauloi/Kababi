@@ -1,5 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Forum&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Forum&family=Open+Sans:wght@300&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+
 header {
   background-image: url(./images/slider/img_bg_slider_home01.jpg);
   background-size: 410px;
@@ -8,15 +13,39 @@ header {
 }
 header h1 {
   font-family: "Forum", cursive;
+  font-size: 35px;
+  text-transform: uppercase;
+  margin-left: 10%;
 }
 header a {
+  margin: 0 0 0 30px;
   font-family: "Open Sans", sans-serif;
   text-decoration: none;
   color: #FBFBFB;
 }
 header .tel {
+  position: relative;
+  right: 0px;
+  top: -10px;
   display: inline;
+  font-size: 12px;
+}
+header .tel .button {
   font-size: 10px;
+  background-color: #C8A96A;
+  padding: 1% 2%;
+  border-radius: 2px;
+  margin-left: 3%;
+  text-transform: uppercase;
+}
+header .header-down {
+  color: #FBFBFB;
+  border: 1px solid grey;
+  font-size: 10px;
+  padding: 1% 2%;
+  position: relative;
+  left: 15px;
+  top: -5px;
 }
 
 main .box h2 {
@@ -66,6 +95,24 @@ main .category .flex-category .energy {
 }
 main .category .flex-category .shrimp {
   grid-area: shrimp;
+}
+main .category .img-down-category {
+  background-color: #FBFBFB;
+  text-align: center;
+}
+main .category .img-down-category .img-center {
+  border: 10px solid white;
+  border-radius: 50%;
+  position: relative;
+  top: -20px;
+}
+main .category .img-down-category .img-left {
+  position: relative;
+  top: -25px;
+}
+main .category .img-down-category .img-right {
+  position: relative;
+  top: -50px;
 }
 main .box-choose {
   height: auto;
@@ -140,6 +187,10 @@ main .news {
 }
 main .news .box-news figure {
   margin: auto;
+}
+main .news .logo-bas-de-page {
+  display: flex;
+  flex-wrap: nowrap;
 }
 
 footer {
