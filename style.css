@@ -267,16 +267,67 @@ footer {
   background-color: black;
   color: #FBFBFB;
 }
+footer img {
+  display: block;
+  margin: auto;
+  padding: 15px 0;
+}
 footer h2 {
   display: block;
   text-align: center;
   padding-top: 10px;
 }
-footer h3 {
-  font-size: 16px;
+footer .grid-footer {
+  background-color: black;
+  color: #FBFBFB;
+  text-align: center;
+  display: grid;
+  grid-template-areas: "about facilities" "newsletters newsletters" "contact contact";
+  gap: 15px 0;
 }
-footer p {
+footer .grid-footer .box-foot h3 {
+  font-size: 16px;
+  font-family: "Forum", cursive;
+  text-transform: capitalize;
+}
+footer .grid-footer .box-foot p {
+  font-size: 12px;
+  font-family: "Open Sans", sans-serif;
+}
+footer .grid-footer .about {
+  grid-area: about;
+  text-transform: capitalize;
+}
+footer .grid-footer .facilities {
+  grid-area: facilities;
+  text-transform: capitalize;
+}
+footer .grid-footer .newsletters {
+  grid-area: newsletters;
+}
+footer .grid-footer .newsletters input {
+  padding: 1.5px 5px;
+  border: 2px solid black;
+}
+footer .grid-footer .newsletters a {
+  text-decoration: none;
+  background-color: #C8A96A;
+  color: white;
+  padding-bottom: 0.75px;
+  padding-top: 0.75px;
+  position: relative;
+  right: 10px;
+}
+footer .grid-footer .contact {
+  grid-area: contact;
+  display: block;
+  text-decoration: none;
+  color: white;
+}
+footer .copyright {
   font-size: 10px;
+  text-align: center;
+  font-family: "Open Sans", sans-serif;
 }
 
 .container {

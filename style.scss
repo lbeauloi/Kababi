@@ -271,23 +271,85 @@ main{
     }
 }
 footer{
-    // background-image: url("./images/footer/img-ng-footer.jpg");
-    // background-size: 410px;
-    // background-repeat: no-repeat;
     background-color: black;
-    
     color: $footer-font-color;
+    img{
+        display: block;
+        margin: auto;
+        padding: 15px 0;
+    }
+
+
     h2{
         display: block;
         text-align: center;
         padding-top: 10px;
     }
-    h3{
-        font-size: 16px;
+    .grid-footer{   
+    background-color: black;
+    color: $footer-font-color;
+    text-align: center;
+    display: grid;
+    grid-template-areas: "about facilities"
+                        "newsletters newsletters"
+                        "contact contact";
+    gap: 15px 0;
+    
+
+        .box-foot{  
+            h3{
+                font-size: 16px;
+                font-family: $font-forum;
+                text-transform: capitalize;
+            }
+
+            p{
+                font-size: 12px;
+                font-family: $font-opensans;
+            } 
+        }               
+        .about{
+            grid-area: about;
+            text-transform: capitalize;
+        }
+        .facilities{
+            grid-area: facilities;
+            text-transform: capitalize;
+        }
+        .newsletters{
+            grid-area: newsletters;
+            input{
+                padding: 1.5px 5px;
+                border: 2px solid black; 
+            }
+            a{
+                text-decoration: none;
+                background-color: $hover-color;
+                color: white;
+                padding-bottom: 0.75px;
+                padding-top: 0.75px;
+                position: relative;
+                right: 10px;
+            }
+            
+        }
+        .contact{
+            grid-area: contact;
+            display: block;
+            text-decoration: none;
+            color: white;
+        }
+
     }
-    p{
+
+    
+    .copyright{
         font-size: 10px;
-    }
+        text-align: center;
+        font-family: $font-opensans;
+    }  
+   
+
 }
 .container{
     margin: 0;
