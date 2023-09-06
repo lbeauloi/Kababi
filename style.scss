@@ -56,10 +56,12 @@ header{
 main{
     .box{
         h2{
+            font-size: 20px;
             font-family: $font-forum;
             text-align: center;
             text-transform: uppercase;
             padding-top: 20px;
+            font-weight: normal;
         }
         
         .subtitle{
