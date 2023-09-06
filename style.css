@@ -42,8 +42,10 @@ header .tel .button {
 }
 header .header-down {
   color: #FBFBFB;
-  border: 1px solid grey;
-  font-size: 10px;
+  border: 1px solid gray;
+  border-radius: 2px;
+  font-size: 8px;
+  text-transform: uppercase;
   padding: 1% 2%;
   position: relative;
   left: 15px;
@@ -143,7 +145,7 @@ main .box-choose .button-choose {
   text-decoration: none;
 }
 main .special {
-  background-color: #FBFBFB;
+  background-color: #FAF6F0;
   display: grid;
   grid-template-rows: 8;
   gap: 15px;
@@ -157,17 +159,22 @@ main .special .box-special {
   display: grid;
   grid-template-areas: "h4 h4 prix" "p p prix";
 }
-main .special .box-special img {
-  margin: auto;
-}
 main .special .box-special h4 {
   grid-area: h4;
+  font-weight: normal;
+  font-size: 14px;
+  min-width: 300px;
 }
 main .special .box-special p {
   grid-area: p;
+  font-family: "Open Sans", sans-serif;
+  font-size: 8px;
 }
 main .special .box-special img {
   grid-area: prix;
+}
+main .special .img-down-special {
+  margin: 15px auto;
 }
 main .gallery {
   text-align: center;
@@ -196,24 +203,64 @@ main .gallery .div-gallery .image5 {
 main .gallery .div-gallery .image6 {
   grid-area: image6;
 }
-main .box-chef {
+main .gallery .btn-gallery {
+  text-decoration: none;
+  border: 1px solid lightgrey;
+  border-radius: 2px;
+  color: black;
+  font-family: "Open Sans", sans-serif;
+  text-transform: uppercase;
+  font-size: 8px;
+  font-weight: 900;
+  padding: 1% 2%;
+}
+main .chef {
+  background-color: black;
+  color: white;
+}
+main .chef .box-chef {
   display: grid;
   grid-template: repeat(2, 1fr)/repeat(2, 1fr);
-  margin: 10px;
+  margin: 15px;
   gap: 10px;
 }
 main .news {
-  background-color: aqua;
   display: grid;
   grid-template-rows: 3;
-  gap: 5px;
+  gap: 15px;
 }
-main .news .box-news figure {
-  margin: auto;
+main .news .box-news {
+  background-color: #FAF6F0;
+  text-align: center;
+  padding: 25px;
+  margin: 0 25px;
+}
+main .news .box-news figure figcaption {
+  font-family: "Open Sans", sans-serif;
+  font-size: 10px;
+}
+main .news .box-news p {
+  font-family: "Forum", cursive;
+  font-size: 14px;
+  padding: 10px;
+}
+main .news .box-news .btn-news {
+  text-decoration: none;
+  border: 1px solid lightgrey;
+  border-radius: 2px;
+  color: black;
+  font-family: "Open Sans", sans-serif;
+  text-transform: uppercase;
+  font-size: 8px;
+  font-weight: 900;
+  padding: 1% 2%;
+  font-size: 14px;
 }
 main .news .logo-bas-de-page {
+  margin-bottom: 15px;
   display: flex;
   flex-wrap: nowrap;
+  justify-content: space-evenly;
 }
 
 footer {

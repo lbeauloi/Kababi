@@ -8,3 +8,15 @@
     color: $footer-font-color;
     text-decoration: none;
 }
+
+@mixin button-white{
+    text-decoration: none;
+    border: 1px solid lightgrey;
+    border-radius: 2px;
+    color: black;
+    font-family: $font-opensans;
+    text-transform: uppercase;
+    font-size: 8px;
+    font-weight: 900;
+    padding: 1% 2%;
+}
