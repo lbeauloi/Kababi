@@ -37,6 +37,8 @@ header .tel .button {
   border-radius: 2px;
   margin-left: 3%;
   text-transform: uppercase;
+  color: #FBFBFB;
+  text-decoration: none;
 }
 header .header-down {
   color: #FBFBFB;
@@ -49,11 +51,15 @@ header .header-down {
 }
 
 main .box h2 {
+  font-family: "Forum", cursive;
   text-align: center;
+  text-transform: uppercase;
+  padding-top: 20px;
 }
 main .box .subtitle {
   text-align: center;
   font-size: 10px;
+  font-family: "Open Sans", sans-serif;
 }
 main .category {
   background-image: url(./images/Banner/imgbgcategory.png);
@@ -97,7 +103,7 @@ main .category .flex-category .shrimp {
   grid-area: shrimp;
 }
 main .category .img-down-category {
-  background-color: #FBFBFB;
+  background-color: white;
   text-align: center;
 }
 main .category .img-down-category .img-center {
@@ -118,10 +124,24 @@ main .box-choose {
   height: auto;
   text-align: center;
 }
+main .box-choose img {
+  margin-top: 20px;
+}
 main .box-choose p {
   margin: 15px 41px;
 }
+main .box-choose .button-choose {
+  font-size: 10px;
+  background-color: #C8A96A;
+  padding: 1% 2%;
+  border-radius: 2px;
+  margin-left: 3%;
+  text-transform: uppercase;
+  color: #FBFBFB;
+  text-decoration: none;
+}
 main .special {
+  background-color: #FBFBFB;
   display: grid;
   grid-template-rows: 8;
   gap: 15px;
@@ -131,6 +151,7 @@ main .special .box-special {
   border: 0px solid black;
   margin: 0 15px;
   padding: 0 15px;
+  background-color: white;
   display: grid;
   grid-template-areas: "h4 h4 prix" "p p prix";
 }

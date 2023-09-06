@@ -1,0 +1,10 @@
+@mixin button-gold {
+    font-size: 10px; 
+    background-color: $hover-color;
+    padding: 1% 2%;
+    border-radius: 2px;
+    margin-left: 3%;
+    text-transform: uppercase;
+    color: $footer-font-color;
+    text-decoration: none;
+}

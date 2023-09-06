@@ -1,10 +1,10 @@
 @import './_typo.scss';
 @import './_variable.scss';
+@import './mixin';
 
 *{
     margin: 0;
     padding: 0;
-
 }
 header{
     background-image: url(./images/slider/img_bg_slider_home01.jpg);
@@ -13,14 +13,14 @@ header{
     color: $footer-font-color;
     
     h1{
-        font-family: $font-title;
+        font-family: $font-forum;
         font-size: 35px;
         text-transform: uppercase;
         margin-left: 10%;
     }
     a{
         margin: 0 0 0 30px;
-        font-family: $font-button-baseline;
+        font-family: $font-opensans;
         text-decoration: none;
         color: $footer-font-color;
         
@@ -33,12 +33,13 @@ header{
         font-size: 12px;
         // text-align: center;
         .button{
-            font-size: 10px; 
-            background-color: $hover-color;
-            padding: 1% 2%;
-            border-radius: 2px;
-            margin-left: 3%;
-            text-transform: uppercase;
+            // font-size: 10px; 
+            // background-color: $hover-color;
+            // padding: 1% 2%;
+            // border-radius: 2px;
+            // margin-left: 3%;
+            // text-transform: uppercase;
+            @include button-gold;
         }   
     }
     .header-down{
@@ -55,13 +56,16 @@ header{
 main{
     .box{
         h2{
-    
+            font-family: $font-forum;
             text-align: center;
+            text-transform: uppercase;
+            padding-top: 20px;
         }
         
         .subtitle{
             text-align: center;
             font-size: 10px;
+            font-family: $font-opensans;
         }
         
     }
@@ -100,7 +104,7 @@ main{
             .shrimp{grid-area: shrimp;}
         }
         .img-down-category{
-            background-color: $footer-font-color;
+            background-color: white;
             text-align: center;
             .img-center{
                 border: 10px solid white;
@@ -122,22 +126,36 @@ main{
 
 
     .box-choose{
-            height: auto;
-            text-align: center;
-            p{
-                margin: 15px 41px;
-            }
-         } 
+        height: auto;
+        text-align: center;
+        img{
+            margin-top: 20px;
+        }
+        p{
+            margin: 15px 41px;
+        }
+        .button-choose{
+            @include button-gold;
+        }
+    } 
     .special{
+        background-color: $footer-font-color;
         display: grid;
         grid-template-rows: 8;
         gap: 15px;
+        // img{
+        //     z-index: 1;
+        //     position: absolute;
+        //     top: 1000px;
+        // }
     
         .box-special{
+            // z-index: 2;
             width: 350px;
             border: 0px solid black;
             margin: 0 15px;
             padding: 0 15px;
+            background-color: white;
             display: grid;
             grid-template-areas: "h4 h4 prix"
                                      "p p prix";
