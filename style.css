@@ -45,6 +45,7 @@ header .tel .button {
   text-transform: uppercase;
   color: #FBFBFB;
   text-decoration: none;
+  font-family: "Open Sans", sans-serif;
 }
 header .header-down {
   color: #FBFBFB;
@@ -59,13 +60,13 @@ header .header-down {
 }
 header .logo-bestfood-header {
   position: absolute;
-  left: 30%;
-  top: 4%;
+  left: 125px;
+  top: 25px;
 }
 header .logo-play {
   position: absolute;
-  left: 75%;
-  top: 12.5%;
+  left: 305px;
+  top: 102px;
   border: 1px solid white;
   border-radius: 50%;
   padding: 10px;
@@ -163,6 +164,12 @@ main .box-choose .button-choose {
   text-transform: uppercase;
   color: #FBFBFB;
   text-decoration: none;
+  font-family: "Open Sans", sans-serif;
+}
+main .logo-bestfood-choose {
+  position: absolute;
+  left: 275px;
+  top: 1100px;
 }
 main .special {
   background-color: #FAF6F0;
@@ -312,7 +319,7 @@ footer .grid-footer .box-foot h3 {
   font-family: "Forum", cursive;
   text-transform: capitalize;
 }
-footer .grid-footer .box-foot p {
+footer .grid-footer .box-foot p, footer .grid-footer .box-foot li {
   font-size: 12px;
   font-family: "Open Sans", sans-serif;
 }
@@ -344,11 +351,20 @@ footer .grid-footer .contact {
   grid-area: contact;
   color: white;
 }
+footer .grid-footer .contact li {
+  list-style-type: none;
+}
 footer .grid-footer .contact li img {
   float: left;
   position: relative;
   left: 32%;
   top: -10px;
+}
+footer .grid-footer .contact li .logo-adress {
+  float: left;
+  position: relative;
+  left: 25%;
+  top: -12.5px;
 }
 footer .copyright {
   font-size: 10px;

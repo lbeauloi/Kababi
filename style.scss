@@ -55,13 +55,13 @@ header{
     }
     .logo-bestfood-header{
         position: absolute;
-        left: 30%;
-        top: 4%;
+        left: 125px;
+        top: 25px;
     }
     .logo-play{
         position: absolute;
-        left: 75%;
-        top: 12.5%;
+        left: 305px;
+        top: 102px;
         border: 1px solid white;
         border-radius: 50%;
         padding: 10px;
@@ -138,6 +138,7 @@ main{
 
         }
     }
+    
     .box-choose{
         height: auto;
         text-align: center;
@@ -152,6 +153,11 @@ main{
             @include button-gold;
         }
     } 
+    .logo-bestfood-choose{
+        position: absolute;
+        left: 275px;
+        top: 1100px;
+    }
     .special{
         background-color: $banner-color;
         display: grid;
@@ -282,7 +288,7 @@ footer{
                 font-family: $font-forum;
                 text-transform: capitalize;
             }
-            p{
+            p, li{
                 font-size: 12px;
                 font-family: $font-opensans;
             } 
@@ -315,11 +321,18 @@ footer{
             grid-area: contact;
             color: white;
             li{
+                list-style-type: none;
                 img{
                     float: left;
                     position: relative;
                     left: 32%;
                     top: -10px;
+                }
+                .logo-adress{
+                    float: left;
+                    position: relative;
+                    left: 25%;
+                    top: -12.5px;
                 }
             }
         }
