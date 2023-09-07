@@ -6,26 +6,32 @@
     margin: 0;
     padding: 0;
 }
+.container{
+    .box{
+        width: 410px;
+    }
+}
 header{
     background-image: url(./images/slider/img_bg_slider_home01.jpg);
     background-size: 410px;
     background-repeat: no-repeat;
     color: $footer-font-color;
-    
+    border-bottom: 15px solid rgba(0, 0, 0, 0);
     h1{
         font-family: $font-forum;
         font-size: 35px;
         text-transform: uppercase;
         margin-left: 10%;
+        margin-bottom:5% ;
     }
-    // .logo-header{
-    //     a{
-    //         margin: 0 0 0 30px;
-    //         font-family: $font-opensans;
-    //         text-decoration: none;
-    //         color: $footer-font-color;
-    //     }        
-    // }
+    // logo Kababi en haut à gauche de l'ecran
+    a{
+        margin: 0 0 0 30px;
+        font-family: $font-opensans;
+        text-decoration: none;
+        color: $footer-font-color;
+    }        
+    
     .tel{
         position: relative;
         right: 0px;
@@ -46,6 +52,20 @@ header{
         position: relative;
         left: 15px;
         top: -5px;
+    }
+    .logo-bestfood-header{
+        position: absolute;
+        left: 30%;
+        top: 4%;
+    }
+    .logo-play{
+        position: absolute;
+        left: 75%;
+        top: 12.5%;
+        border: 1px solid white;
+        border-radius: 50%;
+        padding: 10px;
+        
     }
 }
 
@@ -121,6 +141,7 @@ main{
     .box-choose{
         height: auto;
         text-align: center;
+        border-bottom: 15px solid white;
         img{
             margin-top: 20px;
         }
@@ -165,7 +186,8 @@ main{
         }
     }
     .gallery{
-        text-align: center;    
+        text-align: center; 
+        border-bottom: 15px solid white;   
         .div-gallery{
             display: grid;
             gap: 10px;
@@ -308,9 +330,4 @@ footer{
         font-family: $font-opensans;
     }
 }
-.container{
-    margin: 0;
-    .box{
-        width: 410px;
-    }
-}
+

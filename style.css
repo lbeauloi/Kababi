@@ -5,17 +5,29 @@
   padding: 0;
 }
 
+.container .box {
+  width: 410px;
+}
+
 header {
   background-image: url(./images/slider/img_bg_slider_home01.jpg);
   background-size: 410px;
   background-repeat: no-repeat;
   color: #FBFBFB;
+  border-bottom: 15px solid rgba(0, 0, 0, 0);
 }
 header h1 {
   font-family: "Forum", cursive;
   font-size: 35px;
   text-transform: uppercase;
   margin-left: 10%;
+  margin-bottom: 5%;
+}
+header a {
+  margin: 0 0 0 30px;
+  font-family: "Open Sans", sans-serif;
+  text-decoration: none;
+  color: #FBFBFB;
 }
 header .tel {
   position: relative;
@@ -44,6 +56,19 @@ header .header-down {
   position: relative;
   left: 15px;
   top: -5px;
+}
+header .logo-bestfood-header {
+  position: absolute;
+  left: 30%;
+  top: 4%;
+}
+header .logo-play {
+  position: absolute;
+  left: 75%;
+  top: 12.5%;
+  border: 1px solid white;
+  border-radius: 50%;
+  padding: 10px;
 }
 
 main .box h2 {
@@ -121,6 +146,7 @@ main .category .img-down-category .img-right {
 main .box-choose {
   height: auto;
   text-align: center;
+  border-bottom: 15px solid white;
 }
 main .box-choose img {
   margin-top: 20px;
@@ -172,6 +198,7 @@ main .special .img-down-special {
 }
 main .gallery {
   text-align: center;
+  border-bottom: 15px solid white;
 }
 main .gallery .div-gallery {
   display: grid;
@@ -327,11 +354,4 @@ footer .copyright {
   font-size: 10px;
   text-align: center;
   font-family: "Open Sans", sans-serif;
-}
-
-.container {
-  margin: 0;
-}
-.container .box {
-  width: 410px;
 }/*# sourceMappingURL=style.css.map */
