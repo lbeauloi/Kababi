@@ -30,7 +30,26 @@ header{
         font-family: $font-opensans;
         text-decoration: none;
         color: $footer-font-color;
-    }        
+    }
+    .burgermenu {
+        position: absolute;
+        &:hover{
+            visibility: visible;
+            color: aqua;
+        }
+        .burgermenu-a {
+            visibility: hidden;
+            display: flex;
+            flex-flow: column wrap;
+            justify-content: center;
+            border: 1px solid white;
+            border-radius: 5px;
+            background-color: black;
+            padding-right: 20px;
+            position: relative;
+            top: -3px;                  
+        }
+    }       
     
     .tel{
         position: relative;
@@ -336,6 +355,11 @@ footer{
                 }
             }
         }
+    }
+    .logo-socialnet{
+        display: flex;
+        justify-content: space-around;
+        margin: 0 100px;
     }    
     .copyright{
         font-size: 10px;

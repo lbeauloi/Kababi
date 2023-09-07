@@ -29,6 +29,25 @@ header a {
   text-decoration: none;
   color: #FBFBFB;
 }
+header .burgermenu {
+  position: absolute;
+}
+header .burgermenu:hover {
+  visibility: visible;
+  color: aqua;
+}
+header .burgermenu .burgermenu-a {
+  visibility: hidden;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  border: 1px solid white;
+  border-radius: 5px;
+  background-color: black;
+  padding-right: 20px;
+  position: relative;
+  top: -3px;
+}
 header .tel {
   position: relative;
   right: 0px;
@@ -365,6 +384,11 @@ footer .grid-footer .contact li .logo-adress {
   position: relative;
   left: 25%;
   top: -12.5px;
+}
+footer .logo-socialnet {
+  display: flex;
+  justify-content: space-around;
+  margin: 0 100px;
 }
 footer .copyright {
   font-size: 10px;
