@@ -33,10 +33,12 @@ header{
     }
     .burgermenu {
         position: absolute;
-        &:hover{
-            visibility: visible;
-            color: aqua;
-        }
+        cursor: pointer;
+        &:hover {
+            .burgermenu-a{
+                visibility: visible;
+            }
+    }
         .burgermenu-a {
             visibility: hidden;
             display: flex;
@@ -49,8 +51,7 @@ header{
             position: relative;
             top: -3px;                  
         }
-    }       
-    
+    }
     .tel{
         position: relative;
         right: 0px;
@@ -83,8 +84,7 @@ header{
         top: 102px;
         border: 1px solid white;
         border-radius: 50%;
-        padding: 10px;
-        
+        padding: 10px;   
     }
 }
 
@@ -103,7 +103,6 @@ main{
             font-size: 10px;
             font-family: $font-opensans;
         }
-        
     }
     .category{
         background-image: url(./images/Banner/imgbgcategory.png);
@@ -111,7 +110,6 @@ main{
         // height: 100vh;
         background-repeat: no-repeat;
         background-color: $banner-color;
-
         .flex-category{
             display: grid;
             gap: 20px 50px;
@@ -146,18 +144,16 @@ main{
                 position: relative;
                 top: -20px;                
             }
-        .img-left{
-            position: relative;
-            top: -25px;
-        }
-        .img-right{
-            position: relative;
-            top: -50px;
-        }
-
+            .img-left{
+                position: relative;
+                top: -25px;
+            }
+            .img-right{
+                position: relative;
+                top: -50px;
+            }
         }
     }
-    
     .box-choose{
         height: auto;
         text-align: center;
@@ -190,8 +186,7 @@ main{
             background-color: white;
             display: grid;
             grid-template-areas: "h4 h4 prix"
-                                 "p p prix";
-            
+                                 "p p prix";        
             h4{
                 grid-area: h4;
                 font-weight: normal;
@@ -207,7 +202,6 @@ main{
         }
         .img-down-special{
             margin: 15px auto;
-
         }
     }
     .gallery{
@@ -221,8 +215,6 @@ main{
                                 "image2 image3"
                                 "image4 image4"
                                 "image5 image6";
-        
-    
             .image1{grid-area:image1;}
             .image2{grid-area:image2;}
             .image3{grid-area:image3;}
@@ -270,7 +262,6 @@ main{
                 font-size: 14px;
             }
         }
-
         .logo-bas-de-page{
             margin-bottom: 15px;
             display: flex;

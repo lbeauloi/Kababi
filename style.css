@@ -31,10 +31,10 @@ header a {
 }
 header .burgermenu {
   position: absolute;
+  cursor: pointer;
 }
-header .burgermenu:hover {
+header .burgermenu:hover .burgermenu-a {
   visibility: visible;
-  color: aqua;
 }
 header .burgermenu .burgermenu-a {
   visibility: hidden;
