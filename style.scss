@@ -113,10 +113,11 @@ main{
         .flex-category{
             display: grid;
             gap: 20px 50px;
+            margin: 20px 60px;
+            border-bottom: 15px solid rgba(0, 0, 0, 0);
             grid-template-areas: "chees pizza"
                                  "coffee chicken"
                                  "energy shrimp";
-                                 margin: 20px 60px;
             .box-category{
                 width: 120px;
                 height: 150px;
@@ -126,6 +127,10 @@ main{
                     width: 40px;
                     height: auto;
                     margin-top: 15px;
+                }
+                p{
+                    padding: 15px 0;
+                    text-transform: capitalize;
                 }
             }
             .chees{grid-area:chees};
@@ -163,6 +168,7 @@ main{
         }
         p{
             margin: 15px 41px;
+            font-family: $font-forum
         }
         .button-choose{
             @include button-gold;
@@ -171,7 +177,7 @@ main{
     .logo-bestfood-choose{
         position: absolute;
         left: 275px;
-        top: 1100px;
+        top: 1115px;
     }
     .special{
         background-color: $banner-color;
@@ -180,7 +186,7 @@ main{
         gap: 15px;
         .box-special{
             width: 350px;
-            border: 0px solid black;
+            border: 1px dashed $hover-color;
             margin: 0 15px;
             padding: 0 15px;
             background-color: white;
@@ -191,7 +197,8 @@ main{
                 grid-area: h4;
                 font-weight: normal;
                 font-size: 14px;
-                min-width: 300px ;
+                min-width: 300px;
+                font-family: $font-forum;
             }
             p{
                 grid-area: p;
