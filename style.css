@@ -17,12 +17,6 @@ header h1 {
   text-transform: uppercase;
   margin-left: 10%;
 }
-header a {
-  margin: 0 0 0 30px;
-  font-family: "Open Sans", sans-serif;
-  text-decoration: none;
-  color: #FBFBFB;
-}
 header .tel {
   position: relative;
   right: 0px;
@@ -217,11 +211,12 @@ main .gallery .btn-gallery {
 main .chef {
   background-color: black;
   color: white;
+  border-bottom: 15px solid black;
 }
 main .chef .box-chef {
   display: grid;
   grid-template: repeat(2, 1fr)/repeat(2, 1fr);
-  margin: 15px;
+  margin: 15px 15px 0 15px;
   gap: 10px;
 }
 main .news {
@@ -320,9 +315,13 @@ footer .grid-footer .newsletters a {
 }
 footer .grid-footer .contact {
   grid-area: contact;
-  display: block;
-  text-decoration: none;
   color: white;
+}
+footer .grid-footer .contact li img {
+  float: left;
+  position: relative;
+  left: 32%;
+  top: -10px;
 }
 footer .copyright {
   font-size: 10px;
