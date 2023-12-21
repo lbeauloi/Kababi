@@ -1,5 +1,5 @@
 # Kababi
-This is an exercise carried out in groups of two. We had to reproduce a website, following the design of a Figma. This is a consolidation exercise, the following concepts are used and reviewed:
+This is an exercise carried out in groups of two. We had to reproduce a website, following [the design](https://github.com/becodeorg/CRL-KELLER-6/blob/main/1.TRAIL/1.The-Field/4.HTML-CSS/2.kababi/design/restaurant-theme.png) of a Figma. This is a consolidation exercise, the following concepts are used and reviewed:
 - Sementic HTML
 - SASS + B.E.M Methodology
 - Grid and Flexbox
